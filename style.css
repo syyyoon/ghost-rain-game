@@ -1,0 +1,108 @@
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body {
+  width: 1000px;
+  height: 1000px;
+}
+.title {
+  color: white;
+  background-color: black;
+  width: 1000px;
+  height: 80px;
+  font-size: 60px;
+
+  text-align: center;
+  margin-bottom: 10px;
+}
+#bg {
+  width: 800px;
+  height: 500px;
+  position: relative;
+
+  background: url("./images/bg.png") no-repeat;
+  background-size: cover;
+  /* auto는 가로 중앙에 배치한다 */
+  margin: 0 auto;
+}
+
+#hero {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  width: 35px;
+  height: 54px;
+  background: url("./images/hero.png") no-repeat;
+}
+
+#hero.stop {
+  background-position: 0;
+}
+
+#hero.left {
+  background-position: -70px;
+}
+
+#hero.right {
+  background-position: -105px;
+}
+
+#ghost {
+  position: absolute;
+  width: 45px;
+  height: 54px;
+  background: url("./images/ghost.png") no-repeat;
+}
+
+#ghost.die {
+  background-position: -45px;
+}
+.game-contents {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#watch {
+  width: 40px;
+}
+
+#time,
+#score_number {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+#bg img {
+  width: 800px;
+  height: 500px;
+}
+
+.hearts {
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: end;
+}
+
+.hearts img {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+#container_button {
+  width: 800px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+}
+#start_button {
+  background-color: turquoise;
+  color: white;
+  width: 100%;
+  height: 50px;
+  font-size: 30px;
+  border-radius: 15px;
+}

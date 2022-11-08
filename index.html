@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Udemy - Ghost Rain</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1 class="title">Ghost Rain</h1>
+
+    <div class="game-contents">
+      <div class="status">
+        <img id="watch" src="images/Stopwatch.png" />
+        <div id="time">30 sec</div>
+      </div>
+
+      <div class="status">
+        <div id="score_str">score</div>
+        <div id="score_number">2/10</div>
+      </div>
+    </div>
+
+    <div id="bg">
+      <div id="hero" class="stop"></div>
+      <!-- <div id="ghost" class=""></div> -->
+      <!-- <div id="ghost" class="die"></div> -->
+    </div>
+
+    <div class="hearts">
+      <img style="width: 30px" src="images/heart2.png" alt="heart" />
+      <img style="width: 30px" src="images/heart2.png" alt="heart" />
+      <img style="width: 30px" src="images/heart2.png" alt="heart" />
+      <img style="width: 30px" src="images/heart2.png" alt="heart" />
+      <img style="width: 30px" src="images/heart2.png" alt="heart" />
+    </div>
+    <div id="container_button">
+      <button id="start_button">START!</button>
+    </div>
+
+    <script src="js/settings.js"></script>
+    <script src="js/ghost.js"></script>
+    <script src="js/hero.js"></script>
+    <script src="js/init.js"></script>
+  </body>
+</html>
